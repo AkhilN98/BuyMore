@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BuyMore</string>
+    <string name="log_in">Already have an account?</string>
+    <string name="sign_up">Register new account?</string>
+    <string name="log_inB">Log IN</string>
+    <string name="register_button">Create Account</string>
+</resources>

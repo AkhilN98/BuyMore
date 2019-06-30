@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "451859218121",
+    "firebase_url": "https://buymore-7473e.firebaseio.com",
+    "project_id": "buymore-7473e",
+    "storage_bucket": "buymore-7473e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451859218121:android:8e2dbf70b5036ec4",
+        "android_client_info": {
+          "package_name": "com.akhil.buymore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451859218121-7t04c1hiquvnomnvffbg0kqviojd5kak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akhil.buymore",
+            "certificate_hash": "59b177345cc6f04caf2c0dac2d2835ef7e4edc3c"
+          }
+        },
+        {
+          "client_id": "451859218121-mbf33sbf327rm6nd760cnrmckh0n1do2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd2cN8elP5PkY52Otk2wBEhpO0UL5ryDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451859218121-mbf33sbf327rm6nd760cnrmckh0n1do2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
