@@ -13,17 +13,22 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.akhil.buymore.Model.Users;
+import com.akhil.buymore.Prevalent.prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.rey.material.widget.CheckBox;
+
+import io.paperdb.Paper;
 
 public class Login_Activity extends AppCompatActivity {
 
     private EditText loginNumber, loginPassword;
     private Button loginButton;
     private ProgressDialog loadingbar;
+    private CheckBox ckRememberMe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,9 @@ public class Login_Activity extends AppCompatActivity {
         loginPassword = findViewById(R.id.login_password);
         loginButton = findViewById(R.id.log_inB);
         loadingbar = new ProgressDialog(this);
+
+        ckRememberMe = findViewById(R.id.remember_checkbox);
+        Paper.init(this);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +72,13 @@ public class Login_Activity extends AppCompatActivity {
     }
 
     private void LoginAccount(final String number, final String password) {
+
+        if(ckRememberMe.isChecked()){
+            Paper.book().write(prevalent.UserPhoneKey, number);
+            Paper.book().write(prevalent.UserPassword, password);
+        }
+
+
         final DatabaseReference RootRef;
         RootRef = FirebaseDatabase.getInstance().getReference();
 
