@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".AdminCategoryActivity" />
+        <activity android:name=".AdminProductActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Login_Activity" />
         <activity android:name=".MainActivity">
